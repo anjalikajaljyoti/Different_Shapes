@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid red;
+    margin: 20px;
+    height: 16000px;
+    width: 1520px;
+    background-color: rgb(236, 241, 241);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.box1 {
+    margin: 10px;
+    height: 400px;
+    width: 1420px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.box1:hover {
+    background-color: indianred;
+    transform: rotate(360deg);
+}
+
+.shape1 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(255, 51, 0);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    transition: height 2s ease,width 4s ease-in,background-color 2s ease-out  ;
+    background-image: url(img1.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.shape1:hover{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+
+.shape2 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(0, 17, 255);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition: transform 2s ease-in;
+
+    background-image: url(img2.png);
+    background-position: left;
+    background-size: cover;
+
+}
+
+.shape2:hover {
+    transform: scale(1.3);
+}
+
+
+.shape3 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(195, 0, 255);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    box-shadow: 310px 10px 10px rgb(33, 34, 33);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+    background-image: url(img3.png);
+    background-position: left;
+    background-size: cover;
+   
+
+}
+
+.shape3:hover {
+    background-color: brown;
+}
+.shape4 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(55, 0, 255);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    animation: rotate 2s infinite ;
+
+    background-image: url(img4.png);
+    background-position: left;
+    background-size: cover;
+
+}
+.shape5 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(0, 255, 157);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+    background-image: url(img5.png);
+    background-position: left;
+    background-size: cover;
+
+}
+
+.shape6 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(2, 90, 90);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    animation: rotate 2s infinite ;
+
+
+    background-image: url(img6.png);
+    background-position: left;
+    background-size: cover;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(150deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.shape7 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(115, 133, 233);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    animation: bounced 2s infinite;
+
+    background-image: url(img7.png);
+    background-position: left;
+    background-size: cover;
+
+}
+
+@keyframes bounced {
+    0%{
+        transform: translateX(-50%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+.shape8 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(0, 255, 55);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    animation: FADEIN 2s infinite;
+
+    background-image: url(img8.png);
+    background-position: left;
+    background-size: cover;
+
+}
+
+    
+.shape9 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(135, 152, 247);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+    background-image: url(img9.png);
+    background-position: left;
+    background-size: cover;
+}
+.shape10 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(166, 255, 0);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    animation: bounced 2s infinite;
+
+    background-image: url(imh11.png);
+    background-position:center;
+    background-size: cover;
+
+}
+.shape11{
+    height: 300px;
+    width: 260px;
+    background-color: rgb(120, 236, 105);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+
+    animation: FADEIN 2s infinite;
+
+    background-image: url(img10.png);
+    background-position: left;
+    background-size: cover;
+}
+
+@keyframes FADEIN{
+    0% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+
+}
+.shape12 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(134, 245, 245);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+    animation: rotate 2s infinite ;
+
+    background-image: url(imh11.png);
+    background-position:center;
+    background-size: cover;
+
+}
+.shape13 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(131, 178, 248);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+
+    background-image: url(img10.png);
+    background-position: left;
+    background-size: cover;
+
+}
+.shape14 {
+    height: 300px;
+    width: 260px;
+    background-color: rgb(212, 105, 245);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    animation: rotate 2s infinite ;
+
+    background-image: url(imh11.png);
+    background-position:center;
+    background-size: cover;
+
+}
+.shape15 {
+    height: 300px;
+    width: 260px;
+    background-color: rgba(8, 8, 8, 0.342);
+    /* border: 2px solid rgb(0, 26, 255); */
+    margin-left: 15px;
+    clip-path: polygon();
+
+    background-image: url(imh11.png);
+    background-position:center;
+    background-size: cover;
+
+}
+
